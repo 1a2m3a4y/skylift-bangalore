@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        sky: {
+          start: "hsl(var(--sky-gradient-start))",
+          end: "hsl(var(--sky-gradient-end))",
+        },
+        glass: {
+          bg: "hsl(var(--glass-bg))",
+          border: "hsl(var(--glass-border))",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
