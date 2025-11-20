@@ -14,7 +14,153 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      bookings: {
+        Row: {
+          base_distance: number
+          created_at: string
+          destination: Json
+          estimated_duration: number | null
+          final_price: number
+          id: string
+          pickup_location: Json
+          qr_code: string | null
+          route_complexity: number
+          status: string
+          surge_multiplier: number
+          updated_at: string
+          user_id: string | null
+          vehicle_tier: string
+        }
+        Insert: {
+          base_distance: number
+          created_at?: string
+          destination: Json
+          estimated_duration?: number | null
+          final_price: number
+          id?: string
+          pickup_location: Json
+          qr_code?: string | null
+          route_complexity?: number
+          status?: string
+          surge_multiplier?: number
+          updated_at?: string
+          user_id?: string | null
+          vehicle_tier: string
+        }
+        Update: {
+          base_distance?: number
+          created_at?: string
+          destination?: Json
+          estimated_duration?: number | null
+          final_price?: number
+          id?: string
+          pickup_location?: Json
+          qr_code?: string | null
+          route_complexity?: number
+          status?: string
+          surge_multiplier?: number
+          updated_at?: string
+          user_id?: string | null
+          vehicle_tier?: string
+        }
+        Relationships: []
+      }
+      no_fly_zones: {
+        Row: {
+          coordinates: Json
+          created_at: string
+          id: string
+          name: string
+          reason: string
+          severity: string
+        }
+        Insert: {
+          coordinates: Json
+          created_at?: string
+          id?: string
+          name: string
+          reason: string
+          severity?: string
+        }
+        Update: {
+          coordinates?: Json
+          created_at?: string
+          id?: string
+          name?: string
+          reason?: string
+          severity?: string
+        }
+        Relationships: []
+      }
+      skyports: {
+        Row: {
+          address: string
+          capacity: number
+          created_at: string
+          id: string
+          location: Json
+          name: string
+          status: string
+        }
+        Insert: {
+          address: string
+          capacity?: number
+          created_at?: string
+          id?: string
+          location: Json
+          name: string
+          status?: string
+        }
+        Update: {
+          address?: string
+          capacity?: number
+          created_at?: string
+          id?: string
+          location?: Json
+          name?: string
+          status?: string
+        }
+        Relationships: []
+      }
+      vehicles: {
+        Row: {
+          battery_level: number | null
+          capacity: number
+          created_at: string
+          current_location: Json | null
+          id: string
+          speed_factor: number
+          status: string
+          tier: string
+          updated_at: string
+          vehicle_code: string
+        }
+        Insert: {
+          battery_level?: number | null
+          capacity: number
+          created_at?: string
+          current_location?: Json | null
+          id?: string
+          speed_factor?: number
+          status?: string
+          tier: string
+          updated_at?: string
+          vehicle_code: string
+        }
+        Update: {
+          battery_level?: number | null
+          capacity?: number
+          created_at?: string
+          current_location?: Json | null
+          id?: string
+          speed_factor?: number
+          status?: string
+          tier?: string
+          updated_at?: string
+          vehicle_code?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
