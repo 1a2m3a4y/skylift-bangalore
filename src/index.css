@@ -6,6 +6,16 @@
 All colors MUST be HSL.
 */
 
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #000 !important;
+  color: white !important;
+}
+
+
 @layer base {
   :root {
     /* Aviation theme - Sky blues and electric accents */
