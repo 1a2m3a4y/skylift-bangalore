@@ -40,7 +40,10 @@ export default function Booking() {
         onSubmit={handleSubmit}
         className="bg-white w-full max-w-md p-8 rounded-2xl shadow-xl space-y-4"
       >
-        <h2 className="text-3xl font-bold text-center mb-6">Book Your Ride</h2>
+        <h2 className="text-3xl font-bold text-center mb-6">
+  Book Your Ride (Updated by Amay)
+       </h2>
+
 
         <input
           className="w-full p-3 border rounded-lg"

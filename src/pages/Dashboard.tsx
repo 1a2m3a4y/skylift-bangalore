@@ -6,7 +6,9 @@ const Dashboard = () => {
     <div className="min-h-screen w-full bg-gray-100 flex flex-col">
       {/* TOP NAVBAR */}
       <header className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800">Admin Dashboard</h1>
+      <h1 className="text-2xl font-bold text-gray-800">
+  Admin Dashboard (Updated by Amay)
+     </h1>
         <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
           Logout
         </button>
